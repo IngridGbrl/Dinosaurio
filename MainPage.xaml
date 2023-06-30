@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dinosaurio.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center" BackgroundColor="LightGreen">
+
+            <Image
+                Source="dinosaurio.png" HeightRequest="200" HorizontalOptions="Center" />
+
+            <Label Text="Nombre de dinosaurio"  FontSize="18" TextColor="DarkOliveGreen"/>
+            <Entry x:Name="nombre" Placeholder="Digite nombre de usuario" Keyboard="Text"  TextColor="DimGray"/>
+
+            <Label Text="Peso del dinosaurio"  FontSize="18" TextColor="DarkOliveGreen" />
+            <Entry x:Name="peso" Placeholder="Digite peso en (kg)" Keyboard="Numeric" TextColor="DimGray"/>
+
+            <Label Text="Altura del dinosaruio"  FontSize="18" TextColor="DarkOliveGreen" />
+            <Entry x:Name="altura" Placeholder="Digite altura en (mts)" Keyboard="Numeric" TextColor="DimGray"/>
+
+
+            <Label Text="Peso en libras"  FontSize="18" TextColor="Black" />
+            <Entry x:Name="pesoL" Placeholder="0" IsEnabled="False" PlaceholderColor="Green" TextColor="DarkGreen"/>
+
+            <Label Text="Altura en centímetros"  FontSize="18" TextColor="Black" />
+            <Entry x:Name="Alturacm" Placeholder="0" IsEnabled="False" PlaceholderColor="Green" TextColor="DarkGreen"/>
+
+
+            <Button
+                x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"  BackgroundColor="LimeGreen" 
+                TextColor="NavajoWhite" BorderColor="GreenYellow"
+                WidthRequest="200" HeightRequest="50" BorderWidth="5" HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
